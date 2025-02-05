@@ -29,5 +29,8 @@ jobs:
           name: github-pages
           path: "."
 
+      - name: List files in artifact
+        run: ls -R .
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
